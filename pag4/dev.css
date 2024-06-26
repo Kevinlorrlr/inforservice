@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    font-family:  Poppins,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: #f2f2f2;
+    --primary-color: #0E5D97;
+    --secundary-color: #393B7B;
+    --primary-text-color: #4D4D4D;
+    --secundary-text-color: #f9f9f9;
+    
+}
+
+
+#devsection {
+    background: linear-gradient(rgba(0, 0, 0, 0.503), var(--secundary-color));
+    position: relative;
+    min-height: 78vh;
+    background-size: cover ;
+}
+
+
+.devsection__background {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    height: 78vh;
+    width: 100%;
+    z-index: -10;
+}
+
+.devsection__foreground {
+    text-align: start;
+    color: var(--secundary-text-color);
+    
+    margin-left: 5rem;
+    width: 50%;
+    padding-top: 17vh;
+}
+
+.foreground__title{
+    font-size: 2.4rem;
+}
+
+.foreground__list{
+    list-style: none;
+    margin-top: 1.3Frem;
+    margin-left: 4rem;
+    font-size: 1.7rem;
+}
+
+.list-item {
+    position: relative;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: var(--secundary-text-color);
+}
+
+.list-item a::before{
+    content: "";
+    width: 1.2rem;
+    height: 5px;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    background-color: var(--background-color);
+    top: 1.1rem;
+    left: -1.5rem;
+}
+
+.list-item a:hover{
+    color: var(--primary-color);
+
+}
+
+.box-foreground h2 {
+    padding-top: .7rem;
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+/* Sessao about */
+
+#dev__about {
+    display: flex;
+    padding: 4rem 4rem 6rem 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__title {
+    color: var(--primary-text-color);
+    margin-right: 2.7rem;
+    width: 50%;
+}
+
+.about__title h2{
+    font-size: 1.6rem;
+    color: #303030;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.btn-about {
+    margin-top: 1.4rem;
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: .7rem 1.3rem;
+    cursor: pointer;
+}
+
+.btn-about a {
+    text-decoration: none;
+    color: var(--secundary-text-color);
+}
+
+.about__image img{
+    width: 33rem;
+    border-radius: 10px;
+}
+
+
+/* SESSÃO DOS SERVIÇOS */
+
+#aboutservices {
+    background-color: var(--secundary-color);
+    padding: 4rem 3rem;
+}
+
+.servicesabout {
+    background-color: var(--secundary-text-color);
+    border-radius: 10px;
+    padding-top: 3rem;
+    padding-left: 3.7rem;
+    padding-bottom: 3.7rem;
+    padding-right: 3.7rem;
+}
+
+.about__sistem {
+    margin-bottom: 3rem;
+}
+
+.textdev > h2 {
+    text-align: center;
+    color: var(--secundary-color);
+}
+
+.textdev > p {
+    padding: 0 6rem;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.info__text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 2rem;
+    
+}
+
+.info {
+    background-color: var(--secundary-text-color);
+    box-shadow: 2.5px 3px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 1.3rem 1rem;
+    transition: all 0.3s;
+    width: 33rem;
+}
+
+.info:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    color: var(--secundary-color);
+    padding-bottom: .7rem;
+}
+
+.info p {
+    font-size: .9rem;
+    color: var(--primary-text-color);
+}
+
+@media (max-width: 1333px) {
+    .foreground__title {
+        font-size: 1.8rem;
+    }  
+
+    .devsection__foreground {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1133px) {
+
+    .devsection__foreground {
+        width: 90%;
+        
+    }
+
+    .foreground__title {
+        width: 100%;
+        
+    }
+
+
+
+    .about__title h2 {
+        font-size: 1.3rem;
+    }
+    .about__title p {
+        font-size: .8rem;
+    }
+    .about__image img {
+        width: 25rem;
+    }
+    .btn-about {
+        padding: .5rem .9rem;
+        font-size: .8rem;
+    }
+
+    .info__text {
+        flex-direction: column;
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 940px){
+
+    .devsection__foreground {
+        margin-left: 2rem;
+    }
+
+    #dev__about {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+
+    .about__image {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about__image img {
+        width: 100%;
+    }
+
+    .about__title {
+        width: 100%;
+        margin-right: 0rem;
+    }
+    .about__title h2 {
+        padding-top: 2rem;
+        margin-bottom: .7rem;
+    }
+
+    #aboutservices {
+        padding: 4rem 1rem;
+    }
+
+    .servicesabout {
+        padding: 3rem 1rem 3.7rem 1rem;
+    }
+
+    .info__text {
+        padding: 0rem;
+    }
+
+
+    #cabeadas{
+        padding: 3rem 1rem;
+    }
+    .container__cabeadas {
+        padding: 3rem 1.5rem;
+    }
+    .container__text{
+        width: 100%;
+    }
+    .container__text {
+        width: 90%;
+    }
+    .card {
+        width: 17rem;
+    }
+    .card__description{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 641px){
+
+    .foreground__title {
+        font-size: 1.6rem;
+    }
+
+    .foreground__list {
+        font-size: 1.4rem;
+    }
+
+
+    .card {
+        width: 13rem;
+    }
+    .container__cabeadas{
+        padding: 3rem .7rem;
+    }
+}
+
+@media (max-width: 514px) {
+
+    .devsection__foreground {
+        margin-left: 1rem;
+    }
+
+    .foreground__title {
+        font-size: 1.6rem;
+    }
+
+    #devsection__about {
+        padding: 1rem;
+    }
+    .about__title h2 {
+        font-size: 1rem;
+    }
+
+    .btn-about {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 493px) {
+
+    .devsection__foreground {
+        width: 100%;
+        margin-left: .6rem;
+    }
+
+    .foreground__title {
+        font-size: 1.2rem;
+    }
+
+    .foreground__list {
+        margin-left: 2rem;
+    }
+
+    #dev__about {
+        padding: 4rem 1rem 4rem 1rem;
+    }
+}

@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    font-family:  Poppins,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: #f2f2f2;
+    --primary-color: #0E5D97;
+    --secundary-color: #393B7B;
+    --primary-text-color: #4D4D4D;
+    --secundary-text-color: #f9f9f9;
+    
+}
+
+#header {
+    background-color: var(--background-color);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem 6rem;
+}
+
+.cabecalho > a {
+    text-decoration: none;
+    margin-top: 0.3rem;
+    align-items: center;
+}
+
+#logo {
+    padding: 0;
+    margin: 0;
+    width: 12rem;
+    height: 3.5rem;
+}
+
+.nav-menu {
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hamburguer-button .icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+
+.hamburguer-button[aria-expanded="false"] .icon::before {
+    content: "\2630";
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--primary-color);
+}
+
+.hamburguer-button[aria-expanded="true"] .icon::before {
+    content: "\2715"; /* Unicode para o ícone de fechar (X) */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--primary-color); /* Certifique-se de que a cor está definida */
+}
+
+
+
+.hamburguer-button-js-enabled + .menu {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 15px;
+    overflow: visible;
+    top: 60px;
+    flex-direction: column;
+    background-color: var(--secundary-color);
+
+}
+
+.hamburguer-button-js-enabled + .menu-closed {
+    display: none;
+}
+
+
+.menu {
+    display: flex;
+    gap: 4.9rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .link{
+    color: var(--secundary-text-color);
+    
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+
+.menu li {
+    border-bottom: #ffffff48 2px solid;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+.hamburguer-button {
+    display: none;
+    background: none;
+    border: none;
+    text-align: right;
+    color: var(--secundary-color);
+    font-size: 24px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.hamburguer-button-js-enabled {
+    display: block;
+    width: 40vw;
+}
+
+
+@media (min-width: 891px) {
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .hamburguer-button-js-enabled + .menu {
+        position: static;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .menu .link {
+        color: #9d9c9c;
+    }
+
+    .menu a:hover{
+        color: var(--primary-color);
+    }
+
+    /* FAZENDO ANIMAÇÃO */
+    
+    #header .link{
+        position: relative;
+        margin: 12px;
+        padding-bottom: 3px;
+        
+        transition: all .8s;
+    }
+    
+    #header .link:hover{
+        color: var(--secundary-color);
+    }
+    
+    #header .link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color: var(--primary-color);
+        transition: width .8s;
+    }
+    
+    #header .link:hover::before,
+    #header .link.active::before{
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 1160px) {
+    .cabecalho {
+        padding: .8rem 4rem;
+    }
+
+    .menu {
+        gap: 0rem;
+    }
+
+    
+}
+
+@media (max-width: 1060px) {
+    .cabecalho {
+        padding: .8rem 1rem;;
+    }
+}
+
+@media (max-width: 634px) {
+
+    .cabecalho {
+        width: 100%;
+    }
+    
+    #logo {
+        height: 3rem;
+        width: 11rem;
+    }
+
+    #hamburguer-button {
+        padding: 10px;
+        font-size: 12pt;
+    }
+
+    #hero__foreground{
+        width: 80vw;
+        margin-left: 3rem;
+        padding-top: 20vh;
+    }
+
+    #hero__title {
+        font-size: 1.5rem;
+    }
+
+    #hero__description {
+        font-size: 8.5pt;
+    }
+
+    #about {
+        padding: 4rem 5rem; 
+    }
+
+    #title__about {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 477px) {
+    .nav-menu {
+        
+        width: 100%;
+    }
+}
+
+@media (max-width: 340px) {
+    .nav-menu {
+        width: 100%;    
+    }
+    #logo {
+        height: 2.5rem;
+        width: 9rem;
+    }
+
+    .menu .link {
+        font-size: .7rem;
+    }
+}
+
+/* CONFIGURANDO BARRA DE SCROLL */
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secundary-color);
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+
+
+
+

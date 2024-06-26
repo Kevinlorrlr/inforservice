@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InforService</title>
+    
+    <!-- LINK ICO -->
+    <link rel="shortcut icon" href="../img/logo/IS.ico" type="image/x-icon">
+
+    <!-- LINK GOOGLE FONTES (POPPINS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../footer.css">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="../menu.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="cabecalho">
+            <a href="#hero"><img src="../img/logo/logo_horizontal.png" alt=" Logo InforService" id="logo"></a>
+
+            <nav class="nav-menu">
+
+                <button title="botao menu" id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu" aria-expanded="true">
+                    <span class="icon"></span>Menu
+                </button>
+
+                <ul id="menu" class="menu">
+                    <li><a href="#hero" class="link">Home</a></li>
+                    <li><a href="#about" class="link">Quem somos</a></li>
+                    <li><a href="#services" class="link">Serviços</a></li>
+                    <li><a href="#collaborators" class="link">Colaboradores</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        
+        <section id="hero">
+            
+            <img src="../img/fundos/placa(1440).jpg" alt="Imagem de fundo PC" class="hero__background">
+            <div id="hero__foreground" class="hero__foreground">
+                    <h1 id="hero__title" class="hero__title">Soluções de Manutenção Informática Confiáveis</h1>
+                    <p id="hero__description" class="hero__description">A inforservice é a sua parceira confiável para todas as necessidades de manutenção informática. Com uma equipe experiente e dedicada, oferecemos soluções abrangentes para garantir o funcionamento suave e eficiente dos seus sistemas. Desde a resolução rápida de problemas até a implementação de medidas preventivas, estamos comprometidos em proteger e otimizar o seu ambiente tecnológico</p>
+                    <button class="hero__botao" id="botao" title="Este botão redireciona para a sessão de manutenção" tabindex="3"><a href="#services">Saiba mais</a></button>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <div class="about__title">
+                <h2 id="title__about">
+                    <strong>Confiabilidade e Segurança</strong><br>
+                    
+                </h2>
+                <h3 id="subtitle__about">em nosso serviços de instalações, manutenções e desenvolvimentos</h3>
+                
+                <span id="description__about" class="about__desc">
+                    Oferecemos uma ampla variedade de serviços de TI, desde manutenção preventiva e corretiva até instalação de sistemas e desenvolvimento de soluções personalizadas, garantindo o funcionamento perfeito de sua infraestrutura tecnológica.</span>
+            </div>
+
+            <div class="about__content">
+                <div class="about__content-box" >
+                    <div class="box" id="box1">
+                        <img src="../img/icons/star-solid.svg" alt="Icon de estrela" class="icon">
+                        <div class="box__content">
+                            <h4>Compromisso com a Qualidade </h4>
+                            <p>A qualidade é nossa prioridade número um. Estamos comprometidos em fornecer serviços e soluções de alta qualidade que atendam ou superem as expectativas dos clientes.</p>
+                        </div>
+                    </div>
+
+                    <div class="box border">
+                        <img src="../img/icons/gears-solid.svg" alt="Icon engrenagens" class="icon">
+                        <span class="box__content">
+                            <h4>Suporte Ágil e Responsivo </h4>
+                            <p>Problemas podem surgir a qualquer momento. É por isso que oferecemos suporte técnico ágil e responsivo para que os clientes recebam assistência rápida sempre que precisarem.
+                            </p>
+                        </span>
+                    </div>
+
+                    <div class="box">
+                        <img src="../img/icons/handshake-regular.svg" alt="Icon de comprimento" class="icon">
+                        <span class="box__content">
+                            <h4>Parceria de Longo Prazo </h4>
+                            <p>Valorizamos relacionamentos de longo prazo com nossos clientes. Estamos comprometidos em ser um parceiro em que os clientes podem contar para todas as suas necessidades de TI.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="services">
+
+            <div class="elementor-shape elementor-shape-top" data-negative="true">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+
+                    <path class="elementor-shape-fill" d="M761.9,40.6L643.1,24L333.9,93.8L0.1,1H0v99h1000V1"></path>
+
+                </svg>		
+            </div>
+
+            <div class="services__title">
+                <h1>Saiba mais sobre nossos serviços</h1>
+            </div>
+             <div class="service__card-container">
+                <div class="card">
+                    <div class="pc card__image">
+                        <!-- <img src="./img/card/pc(360).jpg" alt=""> -->
+                    </div>
+                    <div class="card-content">
+                        <h3>Instalações</h3>
+                        <p>
+                            Nossos especialistas cuidam de toda a instalação, desde a configuração inicial até a integração com sua infraestrutura existente. Garantimos uma implementação rápida e sem complicações, para que você possa começar a usar seus novos sistemas o mais rápido possível.</p>
+                        <span class="content__btn"><a role="button" title="Redireciona para pagina de instalações" href="../pag2/instalacoes.html" class="btn">Saiba mais</a></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="server" class="card__image" >
+
+                    </div>
+                    <div class="card-content">
+                        <h3>Manutenções</h3>
+                        <p>
+                            Nossos serviços de manutenção garantem que seus sistemas operem de forma eficiente e confiável, minimizando o tempo de inatividade e protegendo contra falhas. Com uma abordagem proativa, identificamos e resolvemos problemas antes que afetem suas operações.</p>
+                        <a role="button" title="Redireciona para pagina de manutenção" href="../pag3/manutencao.html" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="dev" class="card__image">
+
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3>Desenvolvimentos</h3>
+                        <p>Para atender às necessidades exclusivas do seu negócio, oferecemos pacotes de sistemas e desenvolvimento web. Nossa equipe desenvolve soluções sob medida que atendem às suas especificações, garantindo tanto a funcionalidade quanto a eficiência da sua presença online.</p>
+                        <a role="button" title="Redireciona para pagina de desenvolvimento" href="../pag4/dev.html" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+
+             </div>
+
+
+        </section>
+
+        <section id="collaborators" class="container__collaborators">
+            <div class="collaborators__title">
+                <h2>PARCEIROS</h2>
+            </div>
+            <div class="collaborators">
+
+                <div class="line one">
+                    <img src="../img/colaboradores/eskinao.png" alt="Logo eskinao" class="colab__logo" >
+                    <img src="../img/colaboradores/copa70.png" alt="Logo copa70" class="colab__logo" id="copa70">
+                    <img src="../img/colaboradores/cardiovida.png" alt="Logo cardiovida" class="colab__logo">
+                    <img src="../img/colaboradores/maissaude.png" alt="Logo maissaude" class="colab__logo">
+                    <img src="../img/colaboradores/pafir.png" alt="Logo pafir" class="colab__logo" id="pafir">
+                </div>
+                <div class="line two">
+                    <img src="../img/colaboradores/regional.png" alt="Logo regional" class="colab__logo" id="regional">
+                    <img src="../img/colaboradores/cardioimagem.png" alt="Logo cardioimagem" class="colab__logo">
+                    <img src="../img/colaboradores/imagemdiagnostico.png" alt="Logo imagemdiagnostico" class="colab__logo">
+                    <img src="../img/colaboradores/mercfrut.png" alt="Logo mercfrut" class="colab__logo">
+                    <img src="../img/colaboradores/hotelw4.png" alt="Logo hotelw4" class="colab__logo" id="hotelw4">
+                </div>
+
+                <div class="line three">
+                    <img src="../img/colaboradores/schin logo.png" alt="Logo schin logo" class="colab__logo" id="schin">
+                    <img src="../img/colaboradores/queiroz.png" alt="Logo queiroz" class="colab__logo">
+                    <img src="../img/colaboradores/padaria shangai.png" alt="Logo padaria shangai.png" class="colab__logo">
+                    <img src="../img/colaboradores/auto peças.png" alt="Logo auto peças.png" class="colab__logo">
+                    <img src="../img/colaboradores/sertaofrango.png" alt="Logo sertaofrango.png" class="colab__logo" id="sertaofrango">
+                </div>
+                
+                
+            </div>
+        </section>
+        
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="elementor-shape-footer elementor-shape-top-footer" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	            <path class="elementor-shape-fill-footer" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
+            </svg>		
+        </div>
+
+        <div class="footer__content">
+
+            <div class="container__footer">
+
+                <div class="row">
+
+                    <div class="col" id="company">
+
+                        <img src="../img/logo/logo_horizontal.png" alt="Logo infor service" class="logo__footer">
+
+                        <p>Sua melhor opção em peças e Serviços de informática </p>
+
+                        <div class="social">
+                            <a href="https://wa.me/+5574999887188" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/infor_service/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col cont" id="services__footer">
+                        <h3>Serviços</h3>
+
+                        <div class="links">
+                            <a href="../pag2/instalacoes.html">Instalações</a>
+                            <a href="../pag3/manutencao.html">Manutenções</a>
+                            <a href="../pag4/dev.html">Desenvolvimentos</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col cont" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                            <a href="#hero">Home</a>
+                            <a href="#about">Sobre</a>
+                            <a href="#services">Serviços</a>
+                            <a href="#collaborators">Colaboradores</a>
+                        </div>
+                    </div>
+
+                    <div class="col conct cont" id="contact">
+                        <h3>Contact</h3>
+                        <div class="contact-details">
+                            <i class="fa fa-location"></i>
+                            <p>Praça Ayrton Senna - Irece Ba</p>
+                        </div>
+
+                        <div class="contact-details">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+55 (74) 9-99887188</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
