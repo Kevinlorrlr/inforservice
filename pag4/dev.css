@@ -320,6 +320,10 @@
     .container__cabeadas{
         padding: 3rem .7rem;
     }
+
+    .textdev > p {
+        padding: 0;
+    }
 }
 
 @media (max-width: 514px) {
